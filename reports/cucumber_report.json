@@ -1,0 +1,122 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-signup-functionality;user-signs-up-with-valid-details",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User signs up with valid details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 382011199
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4070049100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user is on the signup page",
+            "match": {
+              "location": "step_definitions\\fourTests.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1844637299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user enters a valid username, email, and password",
+            "match": {
+              "location": "step_definitions\\fourTests.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 349580600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "clicks the \"Signup\" button",
+            "match": {
+              "location": "step_definitions\\fourTests.js:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 290528999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the user should be redirected to the account page",
+            "match": {
+              "location": "step_definitions\\fourTests.js:80"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 44056199,
+              "error_message": "locator.innerText: Error: strict mode violation: locator('h2.title.text-center') resolved to 2 elements:\n    1) <h2 class=\"title text-center\">…</h2> aka getByRole('heading', { name: 'Enter Account Information' })\n    2) <h2 class=\"title text-center\">…</h2> aka getByRole('heading', { name: 'Address Information' })\n\nCall log:\n\u001b[2m  - waiting for locator('h2.title.text-center')\u001b[22m\n\n    at CustomWorld.<anonymous> (C:\\Users\\Dan\\ajBell\\step_definitions\\fourTests.js:84:39)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the user should see a welcome message",
+            "match": {
+              "location": "step_definitions\\fourTests.js:104"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 570730200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 521437299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-signup-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User signup functionality",
+    "tags": [],
+    "uri": "features\\fourTests.feature"
+  }
+]

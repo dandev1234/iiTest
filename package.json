@@ -1,0 +1,21 @@
+{
+  "name": "ajbell",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --format json:reports/cucumber-report.json",
+    "report": "node generate-report.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.51.1",
+    "chai": "^5.2.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "playwright": "^1.51.1"
+  }
+}

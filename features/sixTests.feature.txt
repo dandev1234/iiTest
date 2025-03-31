@@ -1,0 +1,51 @@
+Feature: User signup functionality
+
+  Scenario: User signs up with valid details
+    Given the user is on the signup page
+    When the user enters a valid username, email, and password
+    And clicks the "Signup" button
+    Then the user should be redirected to the account page
+    And the user should see a welcome message
+
+Feature: User login functionality
+
+  Scenario: User logs in with valid credentials
+    Given the user is on the login page
+    When the user enters a valid username and password
+    And clicks the "Login" button
+    Then the user should be redirected to the homepage
+    And the user should see a logout button
+
+Feature: Add product to shopping cart
+
+  Scenario: User adds a product to the cart
+    Given the user is on the homepage
+    When the user selects a product
+    And clicks the "Add to cart" button
+    Then the product should be added to the cart
+    And the cart icon should reflect 1 item
+
+Feature: Checkout functionality
+
+  Scenario: User completes a purchase
+    Given the user has added a product to the cart
+    When the user clicks on the "View Cart" button
+    And clicks the "Proceed to Checkout" button
+    Then the user should be on the checkout page
+    And the total price should be displayed correctly
+
+Feature: Product details page
+
+  Scenario: User views a product's details
+    Given the user is on the homepage
+    When the user clicks on a product
+    Then the product details page should open
+    And the product's name, price, and description should be displayed
+
+Feature: Contact us form
+
+  Scenario: User submits a contact form
+    Given the user is on the "Contact Us" page
+    When the user enters their name, email, and message
+    And clicks the "Submit" button
+    Then the user should see a confirmation message "Your message has been sent!"
